@@ -4,3 +4,6 @@
 [submodule "apps/hugo/hugo-theme-cleanwhite"]
 	path = apps/hugo/hugo-theme-cleanwhite
 	url = https://github.com/zhaohuabing/hugo-theme-cleanwhite.git
+[submodule "apps/hugo/gohugo-theme-ananke"]
+	path = apps/hugo/gohugo-theme-ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke
