@@ -1,3 +1,6 @@
 [submodule "apps/hugo/themes/ananke"]
 	path = apps/hugo/themes/ananke
 	url = https://github.com/theNewDynamic/gohugo-theme-ananke
+[submodule "apps/hugo/hugo-theme-cleanwhite"]
+	path = apps/hugo/hugo-theme-cleanwhite
+	url = https://github.com/zhaohuabing/hugo-theme-cleanwhite.git
