@@ -1,5 +1,5 @@
 {
-  "name": "hugo",
+  "name": "site",
   "version": "1.0.0",
   "scripts": {
     "build": "HUGO_ENV='production' hugo",
