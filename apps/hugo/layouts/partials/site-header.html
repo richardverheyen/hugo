@@ -1,0 +1,21 @@
+{{ $sass := resources.Get "styles/site-header.scss" }}
+{{ $style := $sass | resources.ToCSS | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+
+<header id="site-header" >
+  <nav id="primary-navigation" class="gutters" role="navigation">
+    <a href="/">
+      <img src="/images/logo-full.svg" alt="The Smith Family logo">
+    </a>
+    {{ partial "navigation-primary.html" .}}
+    <a href="/sponsor-a-child" style="background-color: #e58221">
+      Child Sponsorship
+    </a>
+    <a href="/donate"  style="background-color:  #e31837">
+      Donate Now
+    </a>
+  </nav>
+  <nav id="secondary-navigation" class="gutters" role="navigation">
+    {{ partial "navigation-secondary.html" .}}
+  </nav>
+</header>

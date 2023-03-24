@@ -5,3 +5,5 @@ draft: false
 ---
 
 ### About Us
+
+![Test Image](/images/logo-full.svg)
