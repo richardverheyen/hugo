@@ -31,8 +31,8 @@
     {{ end }}
 
     {{ $sass := resources.Get "styles/main.scss" }}
-    {{ $style := $sass | resources.ToCSS | resources.Fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+    {{ $style := $sass | resources.ToCSS }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" >
     
 	{{ block "head" . }}{{ end }}
   </head>
