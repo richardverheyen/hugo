@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Media and stories on The Smith Family</title>
+    <link>https://tsf-site.vercel.app/media/</link>
+    <description>Recent content in Media and stories on The Smith Family</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Mar 2023 16:08:47 +1100</lastBuildDate><atom:link href="https://tsf-site.vercel.app/media/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Research and advocacy</title>
+      <link>https://tsf-site.vercel.app/media/research/</link>
+      <pubDate>Thu, 23 Mar 2023 16:05:19 +1100</pubDate>
+      
+      <guid>https://tsf-site.vercel.app/media/research/</guid>
+      <description>Research and Advocacy </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Donate on The Smith Family</title>
+    <link>https://tsf-site.vercel.app/donate/</link>
+    <description>Recent content in Donate on The Smith Family</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Mar 2023 16:13:11 +1100</lastBuildDate><atom:link href="https://tsf-site.vercel.app/donate/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ways to give</title>
+      <link>https://tsf-site.vercel.app/donate/give/</link>
+      <pubDate>Thu, 23 Mar 2023 16:04:38 +1100</pubDate>
+      
+      <guid>https://tsf-site.vercel.app/donate/give/</guid>
+      <description>Give to The Smith Family </description>
+    </item>
+    
+  </channel>
+</rss>
