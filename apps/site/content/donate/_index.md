@@ -5,3 +5,4 @@ draft: false
 ---
 
 ### Donate (special template)
+{{< donation/form >}}
