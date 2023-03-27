@@ -4,15 +4,42 @@
   justify-content: space-between;
   align-items: center;
   list-style: none; }
-  #site-header > nav#primary-navigation > a {
-    display: block;
-    padding: 20px 10px;
+  #site-header > nav#primary-navigation > a.menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #003767;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 24px;
-    background-color: rgba(0, 0, 0, 0.1); }
-    #site-header > nav#primary-navigation > a:not(:last-child) {
-      margin-right: 1rem; }
+    font-family: "NewsGothicMTStd";
+    font-size: 26px;
+    padding: 0 12px;
+    height: 120px;
+    white-space: nowrap; }
+    #site-header > nav#primary-navigation > a.menu::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% + 10px);
+      height: 2px;
+      background-color: #003767;
+      opacity: 0;
+      transition: opacity 200ms ease-in-out;
+      transition-delay: 200ms; }
+    @media (min-width: 600px) {
+      #site-header > nav#primary-navigation > a.menu:hover, #site-header > nav#primary-navigation > a.menu:focus {
+        color: #0069d5; }
+      #site-header > nav#primary-navigation > a.menu:hover::after, #site-header > nav#primary-navigation > a.menu:focus::after {
+        opacity: 1; } }
+    #site-header > nav#primary-navigation > a.menu.logo {
+      padding: 0; }
+      #site-header > nav#primary-navigation > a.menu.logo > img {
+        height: 112px;
+        width: auto; }
+  #site-header > nav#primary-navigation > a:not(:last-child) {
+    margin-right: 10px; }
 
 #site-header > nav#secondary-navigation {
   flex: 1;
@@ -25,7 +52,6 @@
     padding: 20px 10px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 18px;
-    background-color: rgba(0, 0, 0, 0.1); }
+    font-size: 18px; }
     #site-header > nav#secondary-navigation > a:not(:last-child) {
       margin-right: 1rem; }

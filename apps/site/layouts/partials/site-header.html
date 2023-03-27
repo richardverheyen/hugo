@@ -1,21 +1,36 @@
-{{ $sass := resources.Get "styles/site-header.scss" }}
-{{ $style := $sass | resources.ToCSS }}
-<link rel="stylesheet" href="{{ $style.Permalink }}">
+<!-- {{ $sass := resources.Get "styles/site-header.scss" }} -->
+<!-- {{ $style := $sass | resources.ToCSS }} -->
+<!-- <link rel="stylesheet" href="{{ $style.Permalink }}"> -->
 
 <header id="site-header" >
   <nav id="primary-navigation" class="gutters" role="navigation">
-    <a href="/">
+    <a href="/" class="logo">
       <img src="/images/logo-full.svg" alt="The Smith Family logo">
     </a>
-    {{ partial "navigation-primary.html" .}}
-    <a href="/sponsor-a-child" style="background-color: #e58221">
-      Child Sponsorship
+    <a class="menu" href="/programs">Programs</a>
+    <a class="menu" href="/get-involved">Get Involved</a>
+    <a class="menu" href="/donate/give">Ways to Give</a>
+    <a href="/sponsor-a-child" class="mdc-button primary mdc-button--unelevated">
+      <div class="mdc-button__ripple"></div>
+      <span class="mdc-button__label">Child Sponsorship</span>
     </a>
-    <a href="/donate"  style="background-color:  #e31837">
-      Donate Now
+    <a href="/donate" class="mdc-button mdc-button--unelevated mdc-theme--secondary-bg">
+      <div class="mdc-button__ripple"></div>
+      <span class="mdc-button__label">Donate Now</span>
     </a>
   </nav>
   <nav id="secondary-navigation" class="gutters" role="navigation">
-    {{ partial "navigation-secondary.html" .}}
+    <a href="/poverty-in-australia">Poverty in Australia</a>
+    <a href="/about-us">About Us</a>
+    <a href="/media/research">Research</a>
+    <a href="/media">Media &amp; Stories</a>
+    <a href="/login">Login</a>
+    <a href="/">Search</a>
   </nav>
 </header>
+
+<script>
+  document.querySelectorAll('.mdc-button').forEach(el => {
+    mdc.ripple.MDCRipple.attachTo(el);
+  })
+</script>
