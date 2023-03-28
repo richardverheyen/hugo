@@ -11,8 +11,12 @@
     font-weight: bold;
     min-width: 164px;
     max-width: 222px;
-    padding: 0 16px;
     height: 48px;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 0 16px;
+
+    > span {
+        white-space: nowrap;
+    }
 }

@@ -41,20 +41,27 @@
   #site-header > nav#primary-navigation > a:not(:last-child) {
     margin-right: 10px; }
 
-#site-header > nav#secondary-navigation {
-  flex: 1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none; }
-  #site-header > nav#secondary-navigation > a {
-    display: block;
-    padding: 20px 10px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 18px; }
-    #site-header > nav#secondary-navigation > a:not(:last-child) {
-      margin-right: 1rem; }
+#site-header > #secondary-navigation {
+  background: #003767; }
+  #site-header > #secondary-navigation nav.gutters {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none; }
+    #site-header > #secondary-navigation nav.gutters > a.mdc-button {
+      flex: 1 1 auto;
+      border-radius: 0;
+      background: #003767;
+      border-left: 1px solid #002647; }
+      #site-header > #secondary-navigation nav.gutters > a.mdc-button:last-child {
+        border-right: 1px solid #002647; }
+      #site-header > #secondary-navigation nav.gutters > a.mdc-button > div {
+        border-radius: 0; }
+      #site-header > #secondary-navigation nav.gutters > a.mdc-button > span {
+        text-align: center;
+        white-space: nowrap;
+        line-height: 70px; }
 
 .mdc-button {
   border-radius: 5px 0px 5px 0px;
@@ -68,14 +75,27 @@
   font-weight: bold;
   min-width: 164px;
   max-width: 222px;
-  padding: 0 16px;
   height: 48px;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding: 0 16px; }
+  .mdc-button > span {
+    white-space: nowrap; }
 
 :root {
   --mdc-theme-primary: #e58221;
   --mdc-theme-secondary: #e31837; }
+
+.mdc-typography--headline1 {
+  font-family: 'Roboto', 'sans-serif';
+  text-align: center;
+  text-transform: uppercase;
+  color: #444;
+  width: 100%;
+  font-size: 36px;
+  line-height: 43px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #d8d8d8; }
 
 body {
   margin: 0; }

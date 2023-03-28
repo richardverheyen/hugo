@@ -41,17 +41,24 @@
   #site-header > nav#primary-navigation > a:not(:last-child) {
     margin-right: 10px; }
 
-#site-header > nav#secondary-navigation {
-  flex: 1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none; }
-  #site-header > nav#secondary-navigation > a {
-    display: block;
-    padding: 20px 10px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 18px; }
-    #site-header > nav#secondary-navigation > a:not(:last-child) {
-      margin-right: 1rem; }
+#site-header > #secondary-navigation {
+  background: #003767; }
+  #site-header > #secondary-navigation nav.gutters {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none; }
+    #site-header > #secondary-navigation nav.gutters > a.mdc-button {
+      flex: 1 1 auto;
+      border-radius: 0;
+      background: #003767;
+      border-left: 1px solid #002647; }
+      #site-header > #secondary-navigation nav.gutters > a.mdc-button:last-child {
+        border-right: 1px solid #002647; }
+      #site-header > #secondary-navigation nav.gutters > a.mdc-button > div {
+        border-radius: 0; }
+      #site-header > #secondary-navigation nav.gutters > a.mdc-button > span {
+        text-align: center;
+        white-space: nowrap;
+        line-height: 70px; }

@@ -59,23 +59,36 @@
         }
     }
 
-    > nav#secondary-navigation {
-        flex: 1;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        list-style: none;
+    > #secondary-navigation {
+        background: #003767;
 
-        > a {
-            display: block;
-            padding: 20px 10px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 18px;
-
-            &:not(:last-child) {
-                margin-right: 1rem;
+        nav.gutters {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+    
+            > a.mdc-button {
+                flex: 1 1 auto;
+                border-radius: 0;
+                background: #003767;
+                border-left: 1px solid #002647;
+                &:last-child {
+                    border-right: 1px solid #002647;
+                }
+    
+                > div {
+                    border-radius: 0;
+                }
+    
+                > span {
+                    text-align: center;
+                    white-space: nowrap;
+                    line-height: 70px;
+                }
             }
         }
+        
     }
 }
